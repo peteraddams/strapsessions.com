@@ -1107,11 +1107,6 @@ class MegaMenu extends Component {
                                         </div>
                                     </div>
 
-                                    <div className="option-item">
-                                        <Link href="/login">
-                                            <a>Login</a>
-                                        </Link>
-                                    </div>
 
                                     <div className="option-item">
                                         <Link href="#">

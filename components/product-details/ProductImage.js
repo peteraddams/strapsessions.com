@@ -48,14 +48,14 @@ class ProductImage extends Component {
                 <div className="products-page-gallery">
                     <div className="product-page-gallery-main">
                        <div>
-                            <Slider
-                                asNavFor={this.state.nav2}
-                                ref={slider => (this.slider1 = slider)}
-                            >
-                                {
-                                    this.renderSliderMainImages()
-                                }
-                            </Slider>
+                           
+                       <div></div>
+                       <div key={this.props.product.id}>
+                    <div className="item">
+                        <img src={this.props.product.quickView} alt="image" />
+                       
+                    </div>
+                </div>  
                        </div>
                     </div>
 

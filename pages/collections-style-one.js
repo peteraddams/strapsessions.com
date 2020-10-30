@@ -10,7 +10,7 @@ class Index extends Component {
         return (
             <React.Fragment>
                 <Navbar />
-                <Breadcrumb title="Collections Type 1" />
+                <Breadcrumb title="Firearms/HANDGUNS/Semi-Automatic" />
                 <ProductsCollections />
                 <Facility />
                 <Footer />

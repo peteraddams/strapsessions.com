@@ -74,15 +74,15 @@ class ProductContent extends Component {
             <React.Fragment>
                 <div className="col-lg-6 col-md-6">
                     <div className="product-details-content">
-                        <h3>Belted chino trousers polo</h3>
+        <h3>{this.props.product.title}</h3>
 
                         <div className="price">
-                            <span className="new-price">$191.00</span>
+        <span className="new-price">${this.props.product.price}</span>
                         </div>
 
                 
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+        <p>{this.props.product.description}</p>
 
                         <ul className="product-info">
                             
@@ -159,8 +159,8 @@ class ProductContent extends Component {
                             </div>
 
                             <div className="item">
-                                <Link href="#">
-                                    <a className="btn btn-primary">Buy it now!</a>
+                                <Link href="/cart">
+                                    <a className="btn btn-primary">View Cart!</a>
                                 </Link>
                             </div>
                         </div>
