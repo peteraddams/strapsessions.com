@@ -26,7 +26,7 @@ const Product = () => {
                 <div className="container">
                     <div className="row">
                        
-                        <ProductContent product={product} />
+                        {/*<ProductContent product={product} >*/}
                         <DetailsTab product={product} />
                     </div>
                 </div>
