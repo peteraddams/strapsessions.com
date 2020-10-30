@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import Navbar from '../../components/Layout/Navbar';
 import Breadcrumb from '../../components/Common/Breadcrumb';
 import Footer from '../../components/Layout/Footer';
-import ProductImage from '../../components/product-details/ProductImage';
+//import ProductImage from '../../components/product-details/ProductImage';
 import ProductContent from '../../components/product-details/ProductContent';
 import DetailsTab from '../../components/product-details/DetailsTab';
 import RelatedProducts from '../../components/product-details/RelatedProducts';
@@ -25,7 +25,7 @@ const Product = () => {
             <section className="products-details-area pt-60">
                 <div className="container">
                     <div className="row">
-                        <ProductImage product={product} />
+                       
                         <ProductContent product={product} />
                         <DetailsTab product={product} />
                     </div>

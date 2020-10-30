@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[22],{"97Is":function(n,e,u){(window.__NEXT_P=window.__NEXT_P||[]).push(["/404",function(){return u("uNx/")}])},"uNx/":function(n,e,u){"use strict";u.r(e);var o=u("q1tI"),t=u.n(o).a.createElement;e.default=function(){return t("div",{className:"error-area"},t("p",null,"404 - Page Not Found"))}}},[["97Is",1,2,0]]]);
