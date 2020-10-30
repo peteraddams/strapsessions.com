@@ -25,7 +25,7 @@ const Product = () => {
             <section className="products-details-area pt-60">
                 <div className="container">
                     <div className="row">
-                        <ProductImage  />
+                        <ProductImage product={product} />
                         <ProductContent product={product} />
                         <DetailsTab product={product} />
                     </div>
