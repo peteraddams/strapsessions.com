@@ -4,16 +4,21 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import thunkMiddleware from 'redux-thunk';
 import {
     products, 
-    productsCollectionSix, 
-    productsCollectionSeven, 
-    productsCollectionEight, 
-    productsCollectionNine, 
-    productsCollectionTen, 
-    productsCollectionEleven,
-    productsCovid19,
-    productsGrocery,
-    productsElectronics,
-    productsFurniture
+    semiAuth, 
+    revolver, 
+    ak, 
+    tactical, 
+    leverAction, 
+    derringer,
+    ars,
+    aks,
+    boltAction,
+    hunting,
+    rftactical,
+    selfdefense,
+    rim,
+    handAmmuni,
+    rifleammuni,
 } from '../json-data/products';
 
 let store
@@ -32,16 +37,21 @@ import {
 
 const initialState = {
     products: products,
-    productsCollectionSix: productsCollectionSix,
-    productsCollectionSeven: productsCollectionSeven,
-    productsCollectionEight: productsCollectionEight,
-    productsCollectionNine: productsCollectionNine,
-    productsCollectionTen: productsCollectionTen,
-    productsCollectionEleven: productsCollectionEleven,
-    productsCovid19: productsCovid19,
-    productsGrocery: productsGrocery,
-    productsElectronics: productsElectronics,
-    productsFurniture: productsFurniture,
+    semiAuth: semiAuth,
+    revolver: revolver,
+    ak: ak,
+    tactical: tactical,
+    leverAction: leverAction,
+    derringer: derringer,
+    ars: ars,
+    aks: aks,
+    boltAction: boltAction,
+    hunting: hunting,
+    rftactical: rftactical,
+    selfdefense:selfdefense,
+    rim:rim,
+    handAmmuni:handAmmuni,
+    rifleammuni: rifleammuni,
     addedItems:[],
     addedItemsToCompare:[],
     total: 0,
@@ -52,16 +62,16 @@ const reducers = (state = initialState, action) => {
    
     if(action.type === ADD_TO_CART){
         let addedItem = state.products.find(item => item.id === action.id) 
-        || state.productsCollectionSix.find(item => item.id === action.id)
-        || state.productsCollectionSeven.find(item => item.id === action.id)
-        || state.productsCollectionEight.find(item => item.id === action.id)
-        || state.productsCollectionNine.find(item => item.id === action.id)
-        || state.productsCollectionTen.find(item => item.id === action.id)
-        || state.productsCollectionEleven.find(item => item.id === action.id)
-        || state.productsCovid19.find(item => item.id === action.id)
-        || state.productsGrocery.find(item => item.id === action.id)
-        || state.productsElectronics.find(item => item.id === action.id)
-        || state.productsFurniture.find(item => item.id === action.id)
+        || state.semiAuth.find(item => item.id === action.id)
+        || state.revolver.find(item => item.id === action.id)
+        || state.ak.find(item => item.id === action.id)
+        || state.tactical.find(item => item.id === action.id)
+        || state.leverAction.find(item => item.id === action.id)
+        || state.derringer.find(item => item.id === action.id)
+        || state.ars.find(item => item.id === action.id)
+        || state.aks.find(item => item.id === action.id)
+        || state.boltAction.find(item => item.id === action.id)
+        || state.hunting.find(item => item.id === action.id)
         //check if the action id exists in the addedItems
         let existed_item = state.addedItems.find(item => action.id === item.id)
         if(existed_item){
@@ -86,16 +96,16 @@ const reducers = (state = initialState, action) => {
 
     if(action.type === ADD_TO_COMPARE){
         let addedItemToCompare = state.products.find(item => item.id === action.id)
-        || state.productsCollectionSix.find(item => item.id === action.id)
-        || state.productsCollectionSeven.find(item => item.id === action.id)
-        || state.productsCollectionEight.find(item => item.id === action.id)
-        || state.productsCollectionNine.find(item => item.id === action.id)
-        || state.productsCollectionTen.find(item => item.id === action.id)
-        || state.productsCollectionEleven.find(item => item.id === action.id)
-        || state.productsCovid19.find(item => item.id === action.id)
-        || state.productsGrocery.find(item => item.id === action.id)
-        || state.productsElectronics.find(item => item.id === action.id)
-        || state.productsFurniture.find(item => item.id === action.id)
+        || state.semiAuth.find(item => item.id === action.id)
+        || state.revolver.find(item => item.id === action.id)
+        || state.ak.find(item => item.id === action.id)
+        || state.tactical.find(item => item.id === action.id)
+        || state.leverAction.find(item => item.id === action.id)
+        || state.derringer.find(item => item.id === action.id)
+        || state.ars.find(item => item.id === action.id)
+        || state.aks.find(item => item.id === action.id)
+        || state.boltAction.find(item => item.id === action.id)
+        || state.hunting.find(item => item.id === action.id)
         
         addedItemToCompare.quantity = 1;
         
@@ -107,6 +117,16 @@ const reducers = (state = initialState, action) => {
 
     if(action.type === ADD_QUANTITY_WITH_NUMBER){
         let addedItem = state.products.find(item => item.id === action.id)
+        || state.semiAuth.find(item => item.id === action.id)
+        || state.revolver.find(item => item.id === action.id)
+        || state.ak.find(item => item.id === action.id)
+        || state.tactical.find(item => item.id === action.id)
+        || state.leverAction.find(item => item.id === action.id)
+        || state.derringer.find(item => item.id === action.id)
+        || state.ars.find(item => item.id === action.id)
+        || state.aks.find(item => item.id === action.id)
+        || state.boltAction.find(item => item.id === action.id)
+        || state.hunting.find(item => item.id === action.id)
         //check if the action id exists in the addedItems
         let existed_item = state.addedItems.find(item=> action.id === item.id)
         if(existed_item)
@@ -165,6 +185,16 @@ const reducers = (state = initialState, action) => {
 
     if(action.type === SUB_QUANTITY){  
         let addedItem = state.products.find(item=> item.id === action.id) 
+        || state.semiAuth.find(item => item.id === action.id)
+        || state.revolver.find(item => item.id === action.id)
+        || state.ak.find(item => item.id === action.id)
+        || state.tactical.find(item => item.id === action.id)
+        || state.leverAction.find(item => item.id === action.id)
+        || state.derringer.find(item => item.id === action.id)
+        || state.ars.find(item => item.id === action.id)
+        || state.aks.find(item => item.id === action.id)
+        || state.boltAction.find(item => item.id === action.id)
+        || state.hunting.find(item => item.id === action.id)
         //if the qt == 0 then it should be removed
         if(addedItem.quantity === 1){
             let new_items = state.addedItems.filter(item=>item.id !== action.id)

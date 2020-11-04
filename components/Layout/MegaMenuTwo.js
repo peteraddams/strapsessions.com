@@ -105,25 +105,30 @@ class MegaMenuTwo extends Component {
 
                                 <ul className="megamenu-submenu">
                                   <li>
-                                    <Link href="/collections-style-one">
-                                      <a> Semi-Automatic : Revolver</a>
+                                    <Link href="/semi-automatic">
+                                      <a> Semi-Automatic </a>
+                                    </Link>
+                                  </li>
+                                  <li>
+                                    <Link href="/revolver">
+                                      <a> Revolver </a>
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link href="/collections-style-two">
+                                    <Link href="/ar-ak-pistols">
                                       <a>AR/AK Pistols Tactical</a>
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link href="/category-left-sidebar">
+                                    <Link href="/lever-action-handguns">
                                       <a>Lever Action</a>
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link href="/category-left-sidebar-with-block">
+                                    <Link href="/derringer">
                                       <a> Derringer</a>
                                     </Link>
                                   </li>
@@ -135,31 +140,31 @@ class MegaMenuTwo extends Component {
 
                                 <ul className="megamenu-submenu">
                                   <li>
-                                    <Link href="/cart">
+                                    <Link href="/ars">
                                       <a> ARs</a>
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link href="/checkout">
+                                    <Link href="/aks">
                                       <a> AKs</a>
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link href="/compare">
+                                    <Link href="/bolt-action-rifles">
                                       <a> Bolt Action</a>
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link href="/signup">
+                                    <Link href="/hunting-rifles">
                                       <a> Hunting</a>
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link href="/customer-service">
+                                    <Link href="/tactical-rifles">
                                       <a>Tactical</a>
                                     </Link>
                                   </li>
@@ -171,38 +176,20 @@ class MegaMenuTwo extends Component {
 
                                 <ul className="megamenu-submenu">
                                   <li>
-                                    <Link href="/cart">
+                                    <Link href="/self-defense-shotguns">
                                       <a>Self Defense
         </a>
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link href="/checkout">
+                                    <Link href="/sporting-shotguns">
                                       <a>Sporting
         </a>
                                     </Link>
                                   </li>
 
-                                  <li>
-                                    <Link href="/compare">
-                                      <a>Pump Action
-       </a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/login">
-                                      <a> Over & Under
-      </a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/signup">
-                                      <a>  Side by Side</a>
-                                    </Link>
-                                  </li>
+                          
 
                                 </ul>
                               </div>
@@ -223,98 +210,56 @@ class MegaMenuTwo extends Component {
                           <div className="container">
                             <div className="row">
                               <div className="col">
-                                <h6 className="submenu-title">Clothing</h6>
+                                <h6 className="submenu-title">Scopes</h6>
 
                                 <ul className="megamenu-submenu">
                                   <li>
                                     <Link href="/category-without-sidebar-fullwidth">
-                                      <a>Coats</a>
+                                      <a>Rifle Scopes</a>
                                     </Link>
                                   </li>
 
                                   <li>
                                     <Link href="/category-sidebar-fullwidth">
-                                      <a>Jackets</a>
+                                      <a>Red Dot Optics</a>
                                     </Link>
                                   </li>
 
                                   <li>
                                     <Link href="/category-left-sidebar">
-                                      <a>Blazers</a>
+                                      <a>Night Vision / Thermal</a>
                                     </Link>
                                   </li>
 
                                   <li>
                                     <Link href="/category-left-sidebar-with-block">
-                                      <a>Dresses</a>
+                                      <a> Binoculars</a>
                                     </Link>
                                   </li>
 
                                   <li>
                                     <Link href="/category-right-sidebar">
-                                      <a>Trousers</a>
+                                      <a>Range Finders</a>
                                     </Link>
                                   </li>
 
-                                  <li>
-                                    <Link href="/category-right-sidebar-with-block">
-                                      <a>Jeans</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-without-sidebar">
-                                      <a>Sweatshirts</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-sidebar-fullwidth">
-                                      <a>T-Shirts</a>
-                                    </Link>
-                                  </li>
+                                  
+                                 
                                 </ul>
                               </div>
 
                               <div className="col">
-                                <h6 className="submenu-title">Shoes</h6>
+                                <h6 className="submenu-title"> SIGHTS</h6>
 
                                 <ul className="megamenu-submenu">
                                   <li>
                                     <Link href="/category-without-sidebar-fullwidth">
-                                      <a>Trainers</a>
+                                      <a>Handgun Sights</a>
                                     </Link>
                                   </li>
 
-                                  <li>
-                                    <Link href="/category-left-sidebar">
-                                      <a>Boots</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-left-sidebar-with-block">
-                                      <a>Heels</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-right-sidebar">
-                                      <a>Flats</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-right-sidebar-with-block">
-                                      <a>Heeled Sandals</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-without-sidebar">
-                                      <a>Platforms</a>
-                                    </Link>
-                                  </li>
+                                  
+                                
                                 </ul>
                               </div>
 
@@ -324,45 +269,32 @@ class MegaMenuTwo extends Component {
                                 <ul className="megamenu-submenu">
                                   <li>
                                     <Link href="/category-left-sidebar">
-                                      <a>Bags</a>
+                                      <a>  FLASH 
+   </a>
                                     </Link>
                                   </li>
 
                                   <li>
                                     <Link href="/category-right-sidebar">
-                                      <a>Glasses</a>
+                                      <a> LIGHTS WEAPON 
+   </a>
                                     </Link>
                                   </li>
 
                                   <li>
                                     <Link href="/category-right-sidebar-with-block">
-                                      <a>Jewellery</a>
+                                      <a> LIGHTS LASER 
+    </a>
                                     </Link>
                                   </li>
 
                                   <li>
                                     <Link href="/category-without-sidebar">
-                                      <a>iPhone Cases</a>
+                                      <a>SIGHTS BATTERIES & BULBS</a>
                                     </Link>
                                   </li>
 
-                                  <li>
-                                    <Link href="/category-sidebar-fullwidth">
-                                      <a>Gadgets</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-sidebar-fullwidth">
-                                      <a>Hats & Beanie</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-without-sidebar-fullwidth">
-                                      <a>Purses</a>
-                                    </Link>
-                                  </li>
+                                  
                                 </ul>
                               </div>
 
@@ -414,154 +346,38 @@ class MegaMenuTwo extends Component {
                           <div className="container">
                             <div className="row">
                               <div className="col">
-                                <h6 className="submenu-title">Clothing</h6>
+                                
 
                                 <ul className="megamenu-submenu">
                                   <li>
                                     <Link href="/category-left-sidebar">
-                                      <a>Coats</a>
+                                      <a>RIM</a>
                                     </Link>
                                   </li>
 
                                   <li>
                                     <Link href="/category-left-sidebar-with-block">
-                                      <a>Jackets</a>
+                                      <a>Fire Handgun</a>
                                     </Link>
                                   </li>
 
                                   <li>
                                     <Link href="/category-right-sidebar">
-                                      <a>Jeans</a>
+                                      <a>Rifle</a>
                                     </Link>
                                   </li>
 
                                   <li>
                                     <Link href="/category-right-sidebar-with-block">
-                                      <a>T-Shirts</a>
+                                      <a>shotgun</a>
                                     </Link>
                                   </li>
 
-                                  <li>
-                                    <Link href="/category-sidebar-fullwidth">
-                                      <a>Sweatshirts</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-without-sidebar">
-                                      <a>Knitwear</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-sidebar-fullwidth">
-                                      <a>Shirts</a>
-                                    </Link>
-                                  </li>
+                                
                                 </ul>
                               </div>
 
-                              <div className="col">
-                                <h6 className="submenu-title">Shoes</h6>
-
-                                <ul className="megamenu-submenu">
-                                  <li>
-                                    <Link href="/category-without-sidebar-fullwidth">
-                                      <a>Trainers</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-sidebar-fullwidth">
-                                      <a>Boots</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-left-sidebar">
-                                      <a>Heels</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-left-sidebar-with-block">
-                                      <a>Flats</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-right-sidebar">
-                                      <a>Heeled Sandals</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-right-sidebar-with-block">
-                                      <a>Sandals</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-left-sidebar-with-block">
-                                      <a>Platforms</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-without-sidebar">
-                                      <a>Heeled Sandals</a>
-                                    </Link>
-                                  </li>
-                                </ul>
-                              </div>
-
-                              <div className="col">
-                                <h6 className="submenu-title">Accessories</h6>
-
-                                <ul className="megamenu-submenu">
-                                  <li>
-                                    <Link href="/category-without-sidebar">
-                                      <a>Bags</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-left-sidebar">
-                                      <a>Backpacks</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-right-sidebar">
-                                      <a>Glasses</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-left-sidebar">
-                                      <a>Earrings</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-sidebar-fullwidth">
-                                      <a>iPhone Cases</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-right-sidebar">
-                                      <a>Mobile Accessories</a>
-                                    </Link>
-                                  </li>
-
-                                  <li>
-                                    <Link href="/category-without-sidebar-fullwidth">
-                                      <a>Socks</a>
-                                    </Link>
-                                  </li>
-                                </ul>
-                              </div>
+                              
 
                               <div className="col">
                                 <ul className="megamenu-submenu">

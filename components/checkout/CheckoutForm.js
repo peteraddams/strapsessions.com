@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import OrderSummary from './OrderSummary';
 import Payment from '../payments/Payment';
 import useForm from './userForm';
+import CoinbaseCommerceButton from 'react-coinbase-commerce';
+
 
 function CheckoutForm({total, shipping}) {
 
@@ -103,10 +105,7 @@ function CheckoutForm({total, shipping}) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 col-md-12">
-                        <div className="user-actions">
-                            <i className="fas fa-sign-in-alt"></i>
-                            <span>Returning customer? <Link href="#">Click here to login</Link></span>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -300,7 +299,7 @@ function CheckoutForm({total, shipping}) {
                                         <label htmlFor="cash-on-delivery">Cash on Delivery</label>
                                     </p>
                                 </div>
-
+                                <CoinbaseCommerceButton checkoutId={'30934862-d980-46cb-9402-43c81b0cabd5'}/>
                                 <Payment 
                                     amount={totalAmount * 100}
                                     disabled={disable}

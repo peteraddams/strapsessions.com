@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import Navbar from '../../components/Layout/Navbar';
 import Breadcrumb from '../../components/Common/Breadcrumb';
 import Footer from '../../components/Layout/Footer';
-//import ProductImage from '../../components/product-details/ProductImage';
+import ProductImage from '../../components/product-details/ProductImage';
 import ProductContent from '../../components/product-details/ProductContent';
 import DetailsTab from '../../components/product-details/DetailsTab';
 import RelatedProducts from '../../components/product-details/RelatedProducts';
@@ -13,21 +13,34 @@ import Facility from '../../components/shop-style-one/Facility';
 const Product = () => {
     const router = useRouter()
     const { id } = router.query
-    const product = useSelector((state) => state.products.find(item => item.id === parseInt(id)))
+    console.log(router.query);
+    const product= useSelector((state) => state.products.find(item => item.id === parseInt(id)))
+    || useSelector((state) => state.semiAuth.find(item => item.id === parseInt(id)))
+    || useSelector((state) => state.revolver.find(item => item.id === parseInt(id)))
+    || useSelector((state) => state.ak.find(item => item.id === parseInt(id)))
+    || useSelector((state) => state.tactical.find(item => item.id === parseInt(id)))
+    || useSelector((state) => state.leverAction.find(item => item.id === parseInt(id)))
+    || useSelector((state) => state.derringer.find(item => item.id === parseInt(id)))
+    || useSelector((state) => state.ars.find(item => item.id === parseInt(id)))
+    || useSelector((state) => state.aks.find(item => item.id === parseInt(id)))
+    || useSelector((state) => state.boltAction.find(item => item.id === parseInt(id)))
+    || useSelector((state) => state.hunting.find(item => item.id === parseInt(id)))
 
     const products = useSelector((state) => state.products)
     const addedItemsToCompare = useSelector((state) => state.addedItemsToCompare)
     return (
         <React.Fragment>
             <Navbar />
-            <Breadcrumb title="Belted chino trousers polo" />
+            <Breadcrumb title={product.title} />
 
             <section className="products-details-area pt-60">
                 <div className="container">
                     <div className="row">
                        
-                        {/*<ProductContent product={product} <DetailsTab product={product}>*/}
-                         />
+                    <ProductImage product={product} />
+                        <ProductContent product={product} />
+                        <DetailsTab product={product} />
+                        
                     </div>
                 </div>
 
