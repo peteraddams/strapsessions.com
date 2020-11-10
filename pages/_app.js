@@ -13,14 +13,21 @@ import 'react-coinbase-commerce/dist/coinbase-commerce-button.css';
 import Layout from '../components/_App/Layout';
 import { Provider } from 'react-redux';
 // import withRedux from 'next-redux-wrapper';
+import { persistStore } from 'redux-persist';
+import { PersistGate } from 'redux-persist/integration/react';
 import { useStore } from '../store/reducers/reducers';
 
 const MyApp = ({ Component, pageProps }) => {
     const store = useStore(pageProps.initialReduxState)
+    const persistor = persistStore(store, {}, function () {
+      persistor.persist()
+    })
     return (
         <Layout>
             <Provider store={store}>
+            <PersistGate loading={<div>loading</div>} persistor={persistor}> 
                 <Component {...pageProps} />
+                </PersistGate>
             </Provider>
         </Layout>
     );

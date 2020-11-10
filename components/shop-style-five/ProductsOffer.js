@@ -8,7 +8,7 @@ class ProductsOffer extends Component {
                 <div className="container">
                     <div className="products-offer-content">
                         <span>Limited Time Offer</span>
-                        <h1>-40% Off</h1>
+                        <h1>-10% Off all products</h1>
                         <p>Get The Best Deals Now</p>
 
                         <Link href="#">

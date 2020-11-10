@@ -2,6 +2,10 @@ import { useMemo } from 'react';
 import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunkMiddleware from 'redux-thunk';
+import { persistStore, persistReducer } from 'redux-persist'
+import storage from 'redux-persist/lib/storage' // defaults to localStorage for web
+ 
+
 import {
     products, 
     semiAuth, 
@@ -58,7 +62,7 @@ const initialState = {
     shipping: 0
 }
 
-const reducers = (state = initialState, action) => {
+export const reducers = (state = initialState, action) => {
    
     if(action.type === ADD_TO_CART){
         let addedItem = state.products.find(item => item.id === action.id) 
@@ -243,26 +247,35 @@ const reducers = (state = initialState, action) => {
     }
 }
 
-const initStore = (preloadedState = initialState) => {
-    return createStore(
-        reducers,
-        preloadedState,
-        composeWithDevTools(applyMiddleware(thunkMiddleware))
-    )
-}
 
-export const initializeStore = (preloadedState) => {
-    let _store = store ?? initStore(preloadedState)
+
+const persistConfig = {
+    key: 'primary',
+    storage,
+}
+  
+  const persistedReducer = persistReducer(persistConfig, reducers)
+  
+  function makeStore(initialState) {
+    return createStore(
+      persistedReducer,
+      initialState,
+      composeWithDevTools(applyMiddleware())
+    )
+  }
+  
+  export const initializeStore = (preloadedState) => {
+    let _store = store ?? makeStore(preloadedState)
   
     // After navigating to a page with an initial Redux state, merge that state
     // with the current state in the store, and create a new store
     if (preloadedState && store) {
-        _store = initStore({
-            ...store.getState(),
-            ...preloadedState,
-        })
-        // Reset the current store
-        store = undefined
+      _store = makeStore({
+        ...store.getState(),
+        ...preloadedState,
+      })
+      // Reset the current store
+      store = undefined
     }
   
     // For SSG and SSR always create a new store
@@ -271,10 +284,9 @@ export const initializeStore = (preloadedState) => {
     if (!store) store = _store
   
     return _store
-}
-
-export const useStore = (initialState) => {
+  }
+  
+  export function useStore(initialState) {
     const store = useMemo(() => initializeStore(initialState), [initialState])
     return store
-}
-  
+  }
