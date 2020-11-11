@@ -56,7 +56,8 @@ class Index extends Component {
                                     <h3>Drop Us A Line</h3>
                                     <p>We’re happy to answer any questions you have or provide you with an estimate. Just send us a message in the form below with any questions you may have.</p>
 
-                                    <form id="contactForm">
+                                    <form id="contactForm" name="contact" method="POST" data-netlify="true">
+                                    <input type="hidden" name="form-name" value="contact" />
                                         <div className="row">
                                             <div className="col-lg-12 col-md-12">
                                                 <div className="form-group">

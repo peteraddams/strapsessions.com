@@ -38,133 +38,51 @@ class News extends Component {
     }
 
     render() {
+        let { posts } = this.props;
         return (
             <section className="news-area ptb-60">
                 <div className="container">
                     <div className="section-title">
-                        <h2><span className="dot"></span> Novine News</h2>
+                        <h2><span className="dot"></span> Strapsession Blogs</h2>
                     </div>
 
                     {this.state.display ? <OwlCarousel 
                         className="news-slides owl-carousel owl-theme"
                         {...options}
                     >
+                       
+            {posts?.map(({ fields }) => (
+              
+                
+               
+               
+           
                         <div className="single-news-post">
                             <div className="news-image">
                                 <Link href="/blog-details">
                                     <a>
-                                        <img src={require("../../images/blog-img1.jpg")} alt="image" />
+                                        <img src={fields.coverImage.fields.file.url} alt="image" />
                                     </a>
                                 </Link>
                             </div>
 
                             <div className="news-content">
                                 <h3>
-                                    <Link href="/blog-details">
-                                        <a>Styling White Jeans after Labor Day</a>
+                                    <Link href={fields.slug}>
+                                        <a>{fields.title}</a>
                                     </Link>
                                 </h3>
-                                <span className="author">By <a href="#">Admin</a></span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <Link href="/blog-details">
+                                <span className="author">By <a href="#">{fields.author.fields.name}</a></span>
+                                <p>{fields.subTitle}</p>
+                                <Link href={fields.slug}>
                                     <a className="btn btn-light">Read More</a>
                                 </Link>
                             </div>
-                        </div>
+                        </div> 
+                        ))}
+          
 
-                        <div className="single-news-post">
-                            <div className="news-image">
-                                <Link href="/blog-details">
-                                    <a>
-                                        <img src={require("../../images/blog-img2.jpg")} alt="image" />
-                                    </a>
-                                </Link>
-                            </div>
-
-                            <div className="news-content">
-                                <h3>
-                                    <Link href="/blog-details">
-                                        <a>Styling White Jeans after Labor Day</a>
-                                    </Link>
-                                </h3>
-                                <span className="author">By <a href="#">Admin</a></span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <Link href="/blog-details">
-                                    <a className="btn btn-light">Read More</a>
-                                </Link>
-                            </div>
-                        </div>
-
-                        <div className="single-news-post">
-                            <div className="news-image">
-                                <Link href="/blog-details">
-                                    <a>
-                                        <img src={require("../../images/blog-img3.jpg")} alt="image" />
-                                    </a>
-                                </Link>
-                            </div>
-
-                            <div className="news-content">
-                                <h3>
-                                    <Link href="/blog-details">
-                                        <a>Styling White Jeans after Labor Day</a>
-                                    </Link>
-                                </h3>
-                                <span className="author">By <a href="#">Admin</a></span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <Link href="/blog-details">
-                                    <a className="btn btn-light">Read More</a>
-                                </Link>
-                            </div>
-                        </div>
-
-                        <div className="single-news-post">
-                            <div className="news-image">
-                                <Link href="/blog-details">
-                                    <a>
-                                        <img src={require("../../images/blog-img4.jpg")} alt="image" />
-                                    </a>
-                                </Link>
-                            </div>
-
-                            <div className="news-content">
-                                <h3>
-                                    <Link href="/blog-details">
-                                        <a>Styling White Jeans after Labor Day</a>
-                                    </Link>
-                                </h3>
-                                <span className="author">By <a href="#">Admin</a></span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                                <Link href="/blog-details">
-                                    <a className="btn btn-light">Read More</a>
-                                </Link>
-                            </div>
-                        </div>
-
-                        <div className="single-news-post">
-                                <div className="news-image">
-                                    <Link href="/blog-details">
-                                        <a>
-                                            <img src={require("../../images/blog-img5.jpg")} alt="image" />
-                                        </a>
-                                    </Link>
-                                </div>
-
-                                <div className="news-content">
-                                    <h3>
-                                        <Link href="/blog-details">
-                                            <a>Styling White Jeans after Labor Day</a>
-                                        </Link>
-                                    </h3>
-                                    <span className="author">By <a href="#">Admin</a></span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    
-                                    <Link href="/blog-details">
-                                        <a className="btn btn-light">Read More</a>
-                                    </Link>
-                                </div>
-                            </div>
+                       
                     </OwlCarousel> : ''}
                 </div>
             </section>
