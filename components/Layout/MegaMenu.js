@@ -350,25 +350,25 @@ class MegaMenuTwo extends Component {
 
                                 <ul className="megamenu-submenu">
                                   <li>
-                                    <Link href="/category-left-sidebar">
+                                    <Link href="/rim">
                                       <a>RIM</a>
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link href="/category-left-sidebar-with-block">
+                                    <Link href="/handgun-ammunition">
                                       <a>Fire Handgun</a>
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link href="/category-right-sidebar">
+                                    <Link href="/rifle-ammunition">
                                       <a>Rifle</a>
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link href="/category-right-sidebar-with-block">
+                                    <Link href="/shotgun-ammunition">
                                       <a>shotgun</a>
                                     </Link>
                                   </li>
@@ -377,7 +377,26 @@ class MegaMenuTwo extends Component {
                                 </ul>
                               </div>
 
-                              
+                              <div className="col">
+                                <h6 className="submenu-title"> </h6>
+
+                                <ul className="megamenu-submenu">
+                                 
+
+                                  
+                                
+                                </ul>
+                              </div>
+
+                              <div className="col">
+                                <h6 className="submenu-title"> </h6>
+
+                                <ul className="megamenu-submenu">
+                               
+
+                                  
+                                </ul>
+                              </div>
 
                               <div className="col">
                                 <ul className="megamenu-submenu">
@@ -391,14 +410,13 @@ class MegaMenuTwo extends Component {
                                       <div className="category">
                                         <h4>Top Trending</h4>
                                       </div>
-                                      <Link href="#">
-                                        <a></a>
-                                      </Link>
+
+                                      <a href="#"></a>
                                     </div>
 
                                     <div className="aside-trending-products">
                                       <img
-                                        src={require("../../images/category-products-img3.jpg")}
+                                        src={require("../../images/ammunition/rim/cci-956.jpg")}
                                         alt="image"
                                       />
 
@@ -406,9 +424,7 @@ class MegaMenuTwo extends Component {
                                         <h4>Popular Products</h4>
                                       </div>
 
-                                      <Link href="#">
-                                        <a></a>
-                                      </Link>
+                                      <a href="#"></a>
                                     </div>
                                   </li>
                                 </ul>
@@ -419,128 +435,15 @@ class MegaMenuTwo extends Component {
                       </ul>
                     </li>
 
+
                     <li className="nav-item p-relative">
-                      <Link href="#">
+                      <Link href="/blog">
                         <a className="nav-link">
-                          other <i className="fas fa-chevron-down"></i>
+                          Blog 
                         </a>
                       </Link>
 
-                      <ul className="dropdown-menu">
-                        <li className="nav-item">
-                          <Link href="/about">
-                            <a className="nav-link">About Us</a>
-                          </Link>
-                        </li>
-
-                        <li className="nav-item">
-                          <Link href="/sizing-guide">
-                            <a className="nav-link">Sizing Guide</a>
-                          </Link>
-                        </li>
-
-                        <li className="nav-item">
-                          <Link href="/gallery">
-                            <a className="nav-link">Gallery</a>
-                          </Link>
-                        </li>
-
-                        <li className="nav-item">
-                          <Link href="/cart">
-                            <a className="nav-link">Cart</a>
-                          </Link>
-                        </li>
-
-                        <li className="nav-item">
-                          <Link href="/checkout">
-                            <a className="nav-link">Checkout</a>
-                          </Link>
-                        </li>
-
-                        <li className="nav-item">
-                          <Link href="/compare">
-                            <a className="nav-link">Compare</a>
-                          </Link>
-                        </li>
-
-                        <li className="nav-item">
-                          <Link href="/customer-service">
-                            <a className="nav-link">Customer Service</a>
-                          </Link>
-                        </li>
-
-                        <li className="nav-item">
-                          <Link href="/login">
-                            <a className="nav-link">Login</a>
-                          </Link>
-                        </li>
-
-                        <li className="nav-item">
-                          <Link href="/signup">
-                            <a className="nav-link">Signup</a>
-                          </Link>
-                        </li>
-
-                        <li className="nav-item">
-                          <Link href="/faq">
-                            <a className="nav-link">FAQs</a>
-                          </Link>
-                        </li>
-
-                        <li className="nav-item">
-                          <Link href="/error">
-                            <a className="nav-link">Error 404</a>
-                          </Link>
-                        </li>
-
-                        <li className="nav-item">
-                          <Link href="/contact-us">
-                            <a className="nav-link">Contact Us</a>
-                          </Link>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li className="nav-item p-relative">
-                      <Link href="#">
-                        <a className="nav-link">
-                          Blog <i className="fas fa-chevron-down"></i>
-                        </a>
-                      </Link>
-
-                      <ul className="dropdown-menu">
-                        <li className="nav-item">
-                          <Link href="/blog">
-                            <a className="nav-link">Blog Grid (3 in Row)</a>
-                          </Link>
-                        </li>
-
-                        <li className="nav-item">
-                          <Link href="/blog2">
-                            <a className="nav-link">Blog Grid (2 in Row)</a>
-                          </Link>
-                        </li>
-
-                        <li className="nav-item">
-                          <Link href="/blog3">
-                            <a className="nav-link">Blog Grid (1 in Row)</a>
-                          </Link>
-                        </li>
-
-                        <li className="nav-item">
-                          <Link href="/blog-details">
-                            <a className="nav-link">Blog Details</a>
-                          </Link>
-
-                          <Link href="/blog-details-two">
-                            <a className="nav-link">Blog Details Two</a>
-                          </Link>
-
-                          <Link href="/blog-details-three">
-                            <a className="nav-link">Blog Details Three</a>
-                          </Link>
-                        </li>
-                      </ul>
+                      
                     </li>
                   </ul>
 

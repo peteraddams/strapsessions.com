@@ -132,6 +132,53 @@ class BannerSlider extends Component {
                             </div>
                         </div>
                     </div>
+                    <div className="banner-section item-bg6">
+                        <div className="d-table">
+                            <div className="d-table-cell">
+                                <div className="container">
+                                    <VisibilitySensor>
+                                        {({ isVisible }) => (
+                                            <div className="banner-content">
+                                                <span
+                                                    className={
+                                                        isVisible ? "sub-title animated fadeInUp opacityOne" : 'opacityZero'
+                                                    }
+                                                >
+                                                    Limited Time Offer!
+                                                </span>
+                                                
+                                                <h1
+                                                className={
+                                                    isVisible ? "animated fadeInUp opacityOne" : 'opacityZero'
+                                                    }
+                                                >
+                                                   Upgrade your Gun ANd Enjoy Shooting the More
+                                                </h1>
+                                                    
+                                                <p
+                                                    className={
+                                                        isVisible ? "animated fadeInUp opacityOne" : 'opacityZero'
+                                                    }
+                                                >
+                                                   
+                                                </p>
+
+                                                <Link href="#">
+                                                    <a 
+                                                        className={
+                                                            `btn btn-primary ${isVisible ? "animated fadeInUp opacityOne" : 'opacityZero'}`
+                                                        }
+                                                    >
+                                                        Shop Now
+                                                    </a>
+                                                </Link>
+                                            </div>
+                                        )}
+                                    </VisibilitySensor>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </OwlCarousel> : ''}
             </React.Fragment>
         );

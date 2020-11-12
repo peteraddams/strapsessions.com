@@ -109,38 +109,8 @@ class ProductsFilterOptions extends Component {
                             </div>
                         </div>
 
-                        <div className="col d-flex justify-content-center">
-                            <p>Showing 22 of 102 results</p>
-                        </div>
-
-                        <div className="col d-flex">
-                            <span>Show:</span>
-
-                            <div className="show-products-number">
-                                <select>
-                                    <option value="1">22</option>
-                                    <option value="2">32</option>
-                                    <option value="3">42</option>
-                                    <option value="4">52</option>
-                                    <option value="5">62</option>
-                                </select>
-                            </div>
-
-                            <span>Sort:</span>
-
-                            <div className="products-ordering-list">
-                                <select>
-                                    <option value="1">Featured</option>
-                                    <option value="2">Best Selling</option>
-                                    <option value="3">Price Ascending</option>
-                                    <option value="4">Price Descending</option>
-                                    <option value="5">Date Ascending</option>
-                                    <option value="6">Date Descending</option>
-                                    <option value="7">Name Ascending</option>
-                                    <option value="8">Name Descending</option>
-                                </select>
-                            </div>
-                        </div>
+                        
+                        
                     </div>
                 </div>
                 {this.state.display ? <LeftFilter onClick={this.handleLeftFilter} /> : ''}

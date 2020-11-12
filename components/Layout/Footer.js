@@ -17,7 +17,7 @@ class Footer extends Component {
                                     </Link>
                                 </div>
 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                <p>Biggest Online gun deals. One of the largest online gun stores with the selection of handguns, rifles, shotguns, ammo, optics & firearm accessories.</p>
                             </div>
                         </div>
 
@@ -26,11 +26,7 @@ class Footer extends Component {
                                 <h3>Quick Links</h3>
 
                                 <ul className="quick-links">
-                                    <li>
-                                        <Link href="/about">
-                                            <a>About Us</a>
-                                        </Link>
-                                    </li>
+                                  
                                     <li>
                                         <Link href="/faq">
                                             <a>Faq's</a>
@@ -55,11 +51,7 @@ class Footer extends Component {
                                 <h3>Information</h3>
 
                                 <ul className="information-links">
-                                    <li>
-                                        <Link href="/about">
-                                            <a>About Us</a>
-                                        </Link>
-                                    </li>
+                               
                                     <li>
                                         <Link href="/contact-us">
                                             <a>Contact Us</a>
@@ -94,7 +86,7 @@ class Footer extends Component {
                                     </li>
                                     <li>
                                         <i className="far fa-envelope"></i> 
-                                        Email Us: <a href="mailto:support@novine.com">support@novine.com</a>
+                                        Email Us: <a href="mailto:support@novine.com">support@strapsessions.com</a>
                                     </li>
                                     <li>
                                         <i className="fas fa-fax"></i> 

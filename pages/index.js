@@ -14,6 +14,7 @@ import { getAllPosts } from "../lib/index";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import News from "../components/Common/News";
+import TestimonialsTwo from "../components/Common/TestimonialsTwo";
 export async function getStaticProps() {
   const posts = await getAllPosts();
   return { unstable_revalidate: 1, props: { posts } };
@@ -56,7 +57,8 @@ const Index = ({ posts }) => {
       <Products products={products} CompareProducts={addedItemsToCompare} />
       <ProductsOffer />
       <News posts={posts}/>
-      
+      <TestimonialsTwo/>
+      <Partner/>
       <Subscribe />
 
       <Footer />

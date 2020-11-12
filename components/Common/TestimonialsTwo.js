@@ -39,11 +39,11 @@ class TestimonialsTwo extends Component {
                                 <img src={require("../../images/client1.jpg")} alt="image" />
                             </div>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                            <p>One of the great things about Strapsessions is that they not only have a huge selection of firearms, they also have tons of gun parts for those who want to customize their guns</p>
 
                             <div className="client-info">
                                 <h4>Jason Statham</h4>
-                                <span>Founder at Brand</span>
+                                <span>jason231@gmail.com</span>
                             </div>
                         </div>
 
@@ -52,11 +52,11 @@ class TestimonialsTwo extends Component {
                                 <img src={require("../../images/client2.jpg")} alt="image" />
                             </div>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                            <p>I have been dealing with Strapsessions since 2014 and I must say this is the best online company to deal with, I have tried others just to compare and no one compares to Strapsessions, fast shipping, great inventory and the best customer service. I had order a rifle and a week later I was sent a email saying it was out if stock, when I complained to Strapsessions about taking my money for a gun not in stock they explained due to many orders inventory was hard to keep up they rushed my refund and gave me $25 credit. This is the only online company i will deal with most others suck.</p>
 
                             <div className="client-info">
-                                <h4>Jason Jisan</h4>
-                                <span>Founder at Brand</span>
+                                <h4>Michael G</h4>
+                                <span>wanglucki@gmail.com</span>
                             </div>
                         </div>
 
@@ -65,11 +65,11 @@ class TestimonialsTwo extends Component {
                                 <img src={require("../../images/client3.jpg")} alt="image" />
                             </div>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                            <p>Strapsessions Gun Shop is the best shop around . Great selection , Range , and Knowledgeable Staff . Ashley, Amber are two ladies who know their guns both super helpful and such pleasant nice girls. Dan is just A pleasure to deal with very knowledgeable and a super guy . No reason to shop anywhere else . Oh also prices best as well Thanks Strapsessions</p>
 
                             <div className="client-info">
-                                <h4>Jason Shabbir</h4>
-                                <span>Founder at Brand</span>
+                                <h4> Shabbir</h4>
+                                <span></span>
                             </div>
                         </div>
                     </OwlCarousel> : ''}

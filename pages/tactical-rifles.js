@@ -7,7 +7,7 @@ import ProductsFilterOptions from '../components/category-without-sidebar/Produc
 import ProductsCard from '../components/products/ProductsCardTwo';
 
 const hookClass = (props) => {
-    const products = useSelector((state) => state.products)
+    const products = useSelector((state) => state.rftactical)
     const addedItemsToCompare = useSelector((state) => state.addedItemsToCompare)
     return <Index {...props} products={products} CompareProducts={addedItemsToCompare} />
 }

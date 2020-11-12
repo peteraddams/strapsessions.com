@@ -48,7 +48,7 @@ class Partner extends Component {
                         {...options}
                     >
                         <div className="partner-item">
-                            <Link href="#">
+                            <Link href="//www.bbb.org">
                                 <a target="_blank">
                                     <img src={require("../../images/partner1.png")} alt="image" />
                                 </a>
@@ -56,7 +56,7 @@ class Partner extends Component {
                         </div>
 
                         <div className="partner-item">
-                            <Link href="#">
+                            <Link href="//www.resellerratings.com">
                                 <a target="_blank">
                                     <img src={require("../../images/partner2.png")} alt="image" />
                                 </a>
@@ -64,7 +64,7 @@ class Partner extends Component {
                         </div>
 
                         <div className="partner-item">
-                            <Link href="#">
+                            <Link href="//www.nssf.org/safety/own-it-respect-it-secure-it/">
                                 <a target="_blank">
                                     <img src={require("../../images/partner3.png")} alt="image" />
                                 </a>
@@ -72,7 +72,7 @@ class Partner extends Component {
                         </div>
 
                         <div className="partner-item">
-                            <Link href="#">
+                            <Link href="//projectchildsafe.org">
                                 <a target="_blank">
                                     <img src={require("../../images/partner4.png")} alt="image" />
                                 </a>
@@ -80,7 +80,7 @@ class Partner extends Component {
                         </div>
 
                         <div className="partner-item">
-                            <Link href="#">
+                            <Link href="//www.nraschoolshield.org">
                                 <a target="_blank">
                                     <img src={require("../../images/partner5.png")} alt="image" />
                                 </a>
@@ -88,7 +88,7 @@ class Partner extends Component {
                         </div>
 
                         <div className="partner-item">
-                            <Link href="#">
+                            <Link href="//eddieeagle.nra.org">
                                 <a target="_blank">
                                     <img src={require("../../images/partner6.png")} alt="image" />
                                 </a>

@@ -76,6 +76,11 @@ export const reducers = (state = initialState, action) => {
         || state.aks.find(item => item.id === action.id)
         || state.boltAction.find(item => item.id === action.id)
         || state.hunting.find(item => item.id === action.id)
+        || state.rftactical.find(item => item.id === action.id)
+        || state.selfdefense.find(item => item.id === action.id)
+        || state.rim.find(item => item.id === action.id)
+        || state.handAmmuni.find(item => item.id === action.id) 
+        || state.rifleammuni.find(item => item.id === action.id)
         //check if the action id exists in the addedItems
         let existed_item = state.addedItems.find(item => action.id === item.id)
         if(existed_item){
@@ -110,6 +115,11 @@ export const reducers = (state = initialState, action) => {
         || state.aks.find(item => item.id === action.id)
         || state.boltAction.find(item => item.id === action.id)
         || state.hunting.find(item => item.id === action.id)
+        || state.rftactical.find(item => item.id === action.id) 
+        || state.selfdefense.find(item => item.id === action.id) 
+        || state.rim.find(item => item.id === action.id)
+        || state.handAmmuni.find(item => item.id === action.id) 
+        || state.rifleammuni.find(item => item.id === action.id)
         
         addedItemToCompare.quantity = 1;
         
@@ -131,6 +141,11 @@ export const reducers = (state = initialState, action) => {
         || state.aks.find(item => item.id === action.id)
         || state.boltAction.find(item => item.id === action.id)
         || state.hunting.find(item => item.id === action.id)
+        || state.rftactical.find(item => item.id === action.id) 
+        || state.selfdefense.find(item => item.id === action.id) 
+        || state.rim.find(item => item.id === action.id)
+        || state.handAmmuni.find(item => item.id === action.id) 
+        || state.rifleammuni.find(item => item.id === action.id)
         //check if the action id exists in the addedItems
         let existed_item = state.addedItems.find(item=> action.id === item.id)
         if(existed_item)
@@ -199,6 +214,11 @@ export const reducers = (state = initialState, action) => {
         || state.aks.find(item => item.id === action.id)
         || state.boltAction.find(item => item.id === action.id)
         || state.hunting.find(item => item.id === action.id)
+        || state.rftactical.find(item => item.id === action.id) 
+        || state.selfdefense.find(item => item.id === action.id) 
+        || state.rim.find(item => item.id === action.id)
+        || state.handAmmuni.find(item => item.id === action.id) 
+        || state.rifleammuni.find(item => item.id === action.id)
         //if the qt == 0 then it should be removed
         if(addedItem.quantity === 1){
             let new_items = state.addedItems.filter(item=>item.id !== action.id)

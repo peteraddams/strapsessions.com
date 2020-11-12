@@ -4,19 +4,26 @@ import Footer from '../components/Layout/Footer';
 import Facility from '../components/Common/Facility';
 import Breadcrumb from '../components/Common/Breadcrumb';
 import BlogGrid from '../components/blog/BlogGrid';
+import { getAllPosts } from "../lib/index";
+import dynamic from "next/dynamic";
 
-class Blog extends Component {
-    render() {
-        return (
-            <React.Fragment>
+export async function getStaticProps() {
+  const posts = await getAllPosts();
+  return { unstable_revalidate: 1, props: { posts } };
+}
+
+
+
+export default function blog({posts}) {
+    return (
+       
+             <React.Fragment>
                 <Navbar />
                 <Breadcrumb title="Blog" />
-                <BlogGrid />
+                <BlogGrid posts={posts}/>
                 <Facility />
                 <Footer />
             </React.Fragment>
-        );
-    }
+        
+    )
 }
-
-export default Blog;

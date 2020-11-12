@@ -16,7 +16,7 @@ import Subscribe from '../components/Common/Subscribe';
 import InstagramPhoto from '../components/Common/InstagramPhoto';
 
 const Furniture = () => {
-    const products = useSelector((state) => state.productsFurniture)
+    const products = useSelector((state) => state.products)
     const addedItemsToCompare = useSelector((state) => state.addedItemsToCompare)
     return (
         <React.Fragment>
