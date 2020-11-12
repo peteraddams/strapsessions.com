@@ -59,7 +59,7 @@ class News extends Component {
            
                         <div className="single-news-post">
                             <div className="news-image">
-                                <Link href="/blog-details">
+                                <Link href={`/blog/${fields.slug}`}>
                                     <a>
                                         <img src={fields.coverImage.fields.file.url} alt="image" />
                                     </a>
@@ -68,13 +68,13 @@ class News extends Component {
 
                             <div className="news-content">
                                 <h3>
-                                    <Link href={fields.slug}>
+                                    <Link href={`/blog/${fields.slug}`}>
                                         <a>{fields.title}</a>
                                     </Link>
                                 </h3>
                                 <span className="author">By <a href="#">{fields.author.fields.name}</a></span>
                                 <p>{fields.subTitle}</p>
-                                <Link href={fields.slug}>
+                                <Link href={`/blog/${fields.slug}`}>
                                     <a className="btn btn-light">Read More</a>
                                 </Link>
                             </div>

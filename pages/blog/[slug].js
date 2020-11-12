@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 
-import Layout from "../../components/layout/Layout";
+
 import BlogHeader from "../../components/BlogHeader";
 import BlogBody from "../../components/BlogBody";
 import MorePost from "../../components/MorePost";
@@ -10,6 +10,7 @@ import ShareButton from "../../components/ShareButton";
 import { getPostBySlug, getMorePosts, getAllPostsWithSlug } from "../../lib/index";
 
 import { Container, Grid, Typography } from "@material-ui/core";
+import Navbar from "../../components/Layout/Navbar";
 
 export async function getStaticPaths() {
   const allPosts = await getAllPostsWithSlug();
@@ -39,12 +40,8 @@ const Blog = ({ post, morePosts }) => {
   }
 
   return (
-    <Layout
-      title={post?.fields.title}
-      description={post?.fields.subTitle}
-      ogImage={post?.fields.coverImage.fields.file.url}
-      url={`https://blog-with-nextjs-and-contentful.vercel.app/blog/${post?.fields.slug}`}
-    >
+<div>
+  <Navbar/>
       <BlogHeader
         title={post?.fields.title}
         subtitle={post?.fields.subTitle}
@@ -69,7 +66,7 @@ const Blog = ({ post, morePosts }) => {
               - Share -
             </Typography>
             <ShareButton
-              url={`https://blog-with-nextjs-and-contentful.vercel.app/blog/${post?.fields.slug}`}
+              url={`https://strapsessions/blog/${post?.fields.slug}`}
             />
           </Grid>
         </Grid>
@@ -103,7 +100,7 @@ const Blog = ({ post, morePosts }) => {
           ))}
         </Grid>
       </Container>
-    </Layout>
+    </div>
   );
 };
 
