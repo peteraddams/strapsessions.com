@@ -33,18 +33,18 @@ class Index extends Component {
         return (
             <React.Fragment>
                 <Navbar />
-                <Breadcrumb title="Women's" />
+                <Breadcrumb title="SHOP" />
 
                 <OfferArea />
 
                 <section className="products-collections-area ptb-60">
                     <div className="container">
                         <div className="section-title">
-                            <h2><span className="dot"></span> Women's</h2>
+                            <h2><span className="dot"></span> Featured Products</h2>
                         </div>
 
                         <div className="row">
-                            <LeftSidebar />
+                           
 
                             <div className="col-lg-8 col-md-12">
                                 <ProductsFilterOptions onClick={this.handleGrid} />

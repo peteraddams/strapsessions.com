@@ -298,37 +298,7 @@ class MegaMenuTwo extends Component {
                                 </ul>
                               </div>
 
-                              <div className="col">
-                                <ul className="megamenu-submenu">
-                                  <li>
-                                    <div className="aside-trending-products">
-                                      <img
-                                        src={require("../../images/category-products-img2.jpg")}
-                                        alt="image"
-                                      />
-
-                                      <div className="category">
-                                        <h4>Top Trending</h4>
-                                      </div>
-
-                                      <a href="#"></a>
-                                    </div>
-
-                                    <div className="aside-trending-products">
-                                      <img
-                                        src={require("../../images/category-products-img3.jpg")}
-                                        alt="image"
-                                      />
-
-                                      <div className="category">
-                                        <h4>Popular Products</h4>
-                                      </div>
-
-                                      <a href="#"></a>
-                                    </div>
-                                  </li>
-                                </ul>
-                              </div>
+                              
                             </div>
                           </div>
                         </li>
@@ -403,7 +373,7 @@ class MegaMenuTwo extends Component {
                                   <li>
                                     <div className="aside-trending-products">
                                       <img
-                                        src={require("../../images/category-products-img2.jpg")}
+                                        src={require("../../images/ammunition/rim/cci-74.jpg")}
                                         alt="image"
                                       />
 
@@ -411,12 +381,12 @@ class MegaMenuTwo extends Component {
                                         <h4>Top Trending</h4>
                                       </div>
 
-                                      <a href="#"></a>
+                                      <a href="/product/235"></a>
                                     </div>
 
                                     <div className="aside-trending-products">
                                       <img
-                                        src={require("../../images/ammunition/rim/cci-956.jpg")}
+                                        src={require("../../images/ammunition/handgun/1410991550-90282-9mm-luger-147-gr-xtp.jpg")}
                                         alt="image"
                                       />
 
@@ -424,7 +394,7 @@ class MegaMenuTwo extends Component {
                                         <h4>Popular Products</h4>
                                       </div>
 
-                                      <a href="#"></a>
+                                      <a href="/product/215"></a>
                                     </div>
                                   </li>
                                 </ul>

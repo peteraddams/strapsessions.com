@@ -68,7 +68,7 @@ class BannerSlider extends Component {
                                                     Take 20% Off ‘Sale Must-Haves'
                                                 </p>
 
-                                                <Link href="#">
+                                                <Link href="/shop">
                                                     <a 
                                                         className={
                                                             `btn btn-primary ${isVisible ? "animated fadeInUp opacityOne" : 'opacityZero'}`
@@ -116,7 +116,7 @@ class BannerSlider extends Component {
                                                    
                                                 </p>
 
-                                                <Link href="#">
+                                                <Link href="/shop">
                                                     <a 
                                                         className={
                                                             `btn btn-primary ${isVisible ? "animated fadeInUp opacityOne" : 'opacityZero'}`
@@ -163,7 +163,7 @@ class BannerSlider extends Component {
                                                    
                                                 </p>
 
-                                                <Link href="#">
+                                                <Link href="/shop">
                                                     <a 
                                                         className={
                                                             `btn btn-primary ${isVisible ? "animated fadeInUp opacityOne" : 'opacityZero'}`

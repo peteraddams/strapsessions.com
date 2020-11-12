@@ -57,11 +57,7 @@ class Footer extends Component {
                                             <a>Contact Us</a>
                                         </Link>
                                     </li>
-                                    <li>
-                                        <Link href="/sizing-guide">
-                                            <a>Sizing Guide</a>
-                                        </Link>
-                                    </li>
+                                   
                                     <li>
                                         <Link href="/customer-service">
                                             <a>Customer Services</a>

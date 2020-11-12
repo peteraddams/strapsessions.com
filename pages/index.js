@@ -54,6 +54,7 @@ const Index = ({ posts }) => {
       <BannerSlider />
       <Facility />
       <CategoryTypes />
+      
       <Products products={products} CompareProducts={addedItemsToCompare} />
       <ProductsOffer />
       <News posts={posts}/>

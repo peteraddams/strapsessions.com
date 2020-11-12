@@ -16,10 +16,10 @@ class CategoryTypes extends Component {
 
                 <h3 style={{color: "red"}}>Firearms</h3>
 
-                <Link href="/category-without-sidebar">
+                <Link href="/shop">
                   <a className="shop-now-btn">Shop Now</a>
                 </Link>
-                <Link href="/category-without-sidebar">
+                <Link href="/shop">
                   <a className="link-btn"></a>
                 </Link>
               </div>
@@ -34,7 +34,7 @@ class CategoryTypes extends Component {
 
                 <h3 style={{color: "white"}}>Ammunition</h3>
 
-                <Link href="/collections-style-one">
+                <Link href="/shop">
                   <a className="shop-now-btn">Shop Now</a>
                 </Link>
 
@@ -51,13 +51,13 @@ class CategoryTypes extends Component {
                   alt="image"
                 />
 
-                <h3 style={{color: "red"}}>Storage: Cases, Safes, Cabinets</h3>
+                <h3 style={{color: "red"}}>Optics: Scoops And Sights</h3>
 
-                <Link href="/category-left-sidebar-with-block">
+                <Link href="/shop">
                   <a className="shop-now-btn">Shop Now</a>
                 </Link>
 
-                <Link href="/category-left-sidebar-with-block">
+                <Link href="/shop">
                   <a className="link-btn"></a>
                 </Link>
               </div>
@@ -72,11 +72,11 @@ class CategoryTypes extends Component {
 
                 <h3 style={{color: "white"}}>Gun Care </h3>
 
-                <Link href="/category-right-sidebar-with-block">
+                <Link href="/blog">
                   <a className="shop-now-btn">Shop Now</a>
                 </Link>
 
-                <Link href="/category-right-sidebar-with-block">
+                <Link href="/blog">
                   <a className="link-btn"></a>
                 </Link>
               </div>
