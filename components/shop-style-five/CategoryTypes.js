@@ -38,7 +38,7 @@ class CategoryTypes extends Component {
                   <a className="shop-now-btn">Shop Now</a>
                 </Link>
 
-                <Link href="/collections-style-one">
+                <Link href="/shop">
                   <a className="link-btn"></a>
                 </Link>
               </div>
