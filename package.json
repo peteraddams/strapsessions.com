@@ -1,7 +1,7 @@
 {
-    "name": "novine-react-next",
+    "name": "Strapsessions.com",
     "version": "3.7.0",
-    "description": "Novine - React Next eCommerce Templates",
+    "description": "Strapsessions.com #1 Dealer In firearms",
     "main": "index.js",
     "scripts": {
         "dev": "next",
@@ -9,7 +9,7 @@
         "start": "next start",
         "export": "npm run build && next export"
     },
-    "author": "EnvyTheme.com",
+    "author": "Strap Boss",
     "license": "ISC",
     "dependencies": {
         "@babel/runtime-corejs2": "^7.10.2",
@@ -45,7 +45,8 @@
         "redux-thunk": "^2.3.0",
         "sass": "^1.26.7",
         "strip-ansi": "^6.0.0",
-        "stripe": "^7.15.0"
+        "stripe": "^7.15.0",
+        "tawkto-react": "^1.0.11"
     },
     "devDependencies": {
         "file-loader": "^6.0.0",

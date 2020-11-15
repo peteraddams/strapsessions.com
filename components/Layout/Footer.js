@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import Link from "next/link";
 
+    const tawkTo = require("tawkto-react");
+
+const tawkToPropertyId = '5faf168bc52f660e897356f8';
 class Footer extends Component {
+
+
+componentDidMount(){
+    tawkTo(tawkToPropertyId)
+}
     render() {
         return (
             <footer className="footer-area">
@@ -72,22 +80,16 @@ class Footer extends Component {
                                 <h3>Contact Us</h3>
 
                                 <ul className="footer-contact-info">
-                                    <li>
-                                        <i className="fas fa-map-marker-alt"></i> 
-                                        Location: 2750 Quadra Street <br /> Victoria, Canada
-                                    </li>
+                                    
                                     <li>
                                         <i className="fas fa-phone"></i> 
-                                        Call Us: <a href="tel:(+123) 456-7898">(+123) 456-7898</a>
+                                        Call Us/Whatsapp: <a href="tel:(+123) 456-7898">(+161) 932-43574</a>
                                     </li>
                                     <li>
                                         <i className="far fa-envelope"></i> 
                                         Email Us: <a href="mailto:support@novine.com">support@strapsessions.com</a>
                                     </li>
-                                    <li>
-                                        <i className="fas fa-fax"></i> 
-                                        Fax: <a href="tel:+123456">+123456</a>
-                                    </li>
+                                   
                                 </ul>
                             </div>
                         </div>

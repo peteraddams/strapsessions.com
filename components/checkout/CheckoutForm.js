@@ -116,24 +116,7 @@ function CheckoutForm({total, shipping}) {
                                 <h3 className="title">Billing Details</h3>
 
                                 <div className="row">
-                                    <div className="col-lg-12 col-md-12">
-                                        <div className="form-group">
-                                            <label>Country <span className="required">*</span></label>
-                                            <div className="select-box">
-                                                <select 
-                                                    className="form-control"
-                                                    name="country"
-                                                >
-                                                    <option value="5">United Arab Emirates</option>
-                                                    <option value="1">China</option>
-                                                    <option value="2">United Kingdom</option>
-                                                    <option value="0">Germany</option>
-                                                    <option value="3">France</option>
-                                                    <option value="4">Japan</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
+                                   
 
                                     <div className="col-lg-6 col-md-6">
                                         <div className="form-group">

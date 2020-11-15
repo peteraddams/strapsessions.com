@@ -28,7 +28,7 @@ export async function getStaticProps({ params }) {
       post: post ? post : null,
       morePosts: morePosts ? morePosts : null,
     },
-    unstable_revalidate: 1,
+    revalidate: 1,
   };
 }
 

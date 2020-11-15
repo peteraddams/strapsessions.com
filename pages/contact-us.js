@@ -23,11 +23,9 @@ class Index extends Component {
                                     <p>Have a question? You may find an answer in our FAQs. But you can also contact us.</p>
 
                                     <ul className="contact-list">
-                                        <li><i className="fas fa-map-marker-alt"></i> Location: 2750 Quadra Street Victoria, Canada</li>
-                                        <li><i className="fas fa-phone"></i> Call Us: <a href="#">(+123) 456-7898</a></li>
-                                        <li><i className="far fa-envelope"></i> Email Us: <a href="#">support@comero.com</a></li>
-                                        <li><i className="fas fa-fax"></i> Fax: <a href="#">+123456</a></li>
-                                    </ul>
+                                        <li><i className="fas fa-phone"></i> Call Us/Whatsapp: <a href="#">(+161) 932-43574</a></li>
+                                        <li><i className="far fa-envelope"></i> Email Us: <a href="#">support@strapsessions.com</a></li>
+                                          </ul>
 
                                     <h3>Opening Hours:</h3>
                                     <ul className="opening-hours">
@@ -40,9 +38,9 @@ class Index extends Component {
 
                                     <h3>Follow Us:</h3>
                                     <ul className="social">
-                                        <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
+                                        <li><a href="//facebook.com/strapsession"><i className="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="//twitter/strapsessions"><i className="fab fa-twitter"></i></a></li>
+                                        <li><a href="//instagram.com/strapsessions"><i className="fab fa-instagram"></i></a></li>
                                         <li><a href="#"><i className="fab fa-behance"></i></a></li>
                                         <li><a href="#"><i className="fab fa-skype"></i></a></li>
                                         <li><a href="#"><i className="fab fa-pinterest-p"></i></a></li>
