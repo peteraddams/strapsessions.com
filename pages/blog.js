@@ -9,7 +9,7 @@ import dynamic from "next/dynamic";
 
 export async function getStaticProps() {
   const posts = await getAllPosts();
-  return { unstable_revalidate: 1, props: { posts } };
+  return { revalidate: 1, props: { posts } };
 }
 
 

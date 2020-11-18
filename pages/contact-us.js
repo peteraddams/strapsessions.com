@@ -36,16 +36,7 @@ class Index extends Component {
                                         <li><span>Sunday:</span> Closed</li>
                                     </ul>
 
-                                    <h3>Follow Us:</h3>
-                                    <ul className="social">
-                                        <li><a href="//facebook.com/strapsession"><i className="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="//twitter/strapsessions"><i className="fab fa-twitter"></i></a></li>
-                                        <li><a href="//instagram.com/strapsessions"><i className="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i className="fab fa-behance"></i></a></li>
-                                        <li><a href="#"><i className="fab fa-skype"></i></a></li>
-                                        <li><a href="#"><i className="fab fa-pinterest-p"></i></a></li>
-                                        <li><a href="#"><i className="fab fa-youtube"></i></a></li>
-                                    </ul>
+                                    
                                 </div>
                             </div>
 

@@ -4,6 +4,10 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const keys = require("./server/config/keys");
 const stripe = require('stripe')(keys.stripeSecretKey);
+const coinbase = require('coinbase-commerce-node');
+const Client = coinbase.Client;
+
+Client.init('API_KEY');
 
 const dev = process.env.NODE_ENV !== 'production';
 
@@ -28,7 +32,7 @@ app.prepare().then(() => {
         await stripe.charges.create({
             amount: req.body.amount,
             currency: 'usd',
-            description: 'React Next eCommerce Templates',
+            description: 'Strapsession',
             source: req.body.token.id
         });
         res.send({})
