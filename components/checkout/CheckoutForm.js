@@ -349,7 +349,7 @@ function CheckoutForm({ total, shipping }) {
                   styled={true}
                   color="red"
                   checkoutId={"30934862-d980-46cb-9402-43c81b0cabd5"}
-                  name="Novine"
+                  name="strapsession"
                   description="React Next eCommerce Templates"
                   amount={totalAmount * 100}
                   currency="USD"

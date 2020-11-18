@@ -83,11 +83,11 @@ componentDidMount(){
                                     
                                     <li>
                                         <i className="fas fa-phone"></i> 
-                                        Call Us/Whatsapp: <a href="tel:(+123) 456-7898">(+161) 932-43574</a>
+                                        Call Us/Whatsapp: <a href="tel:(+161) 932-43574">(+161) 932-43574</a>
                                     </li>
                                     <li>
                                         <i className="far fa-envelope"></i> 
-                                        Email Us: <a href="mailto:support@novine.com">support@strapsessions.com</a>
+                                        Email Us: <a href="support@strapsessions.com">support@strapsessions.com</a>
                                     </li>
                                    
                                 </ul>
