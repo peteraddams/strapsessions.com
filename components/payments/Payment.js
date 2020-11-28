@@ -34,14 +34,14 @@ class Payments extends React.Component {
             <React.Fragment>
                 <div className="order-btn">
                     <StripeCheckout 
-                        name="Strapsessions"
+                        name="Novine"
                         description="React Next eCommerce Templates"
                         amount={amount}
                         currency="USD"
                         token={onToken}
                         stripeKey="pk_test_ZaZZWZGlvdIn12yFleIqyjSI00G4e18Kf7"
                         billingAddress={false}
-                        closed={this.handleClick}
+                        
                     >
                         <button disabled={this.props.disabled} className={`btn btn-primary ${this.props.disabled ? 'btn-disabled' : ''}`} >
                             Place Order

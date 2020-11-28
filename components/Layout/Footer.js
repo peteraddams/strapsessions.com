@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import Link from "next/link";
 
-    const tawkTo = require("tawkto-react");
 
-const tawkToPropertyId = '5faf168bc52f660e897356f8';
+
+
 class Footer extends Component {
 
 
-componentDidMount(){
-    tawkTo(tawkToPropertyId)
-}
+yy
     render() {
         return (
             <footer className="footer-area">

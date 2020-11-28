@@ -3,6 +3,7 @@ import Head from 'next/head';
 import GoTop from '../Shared/GoTop';
 import { ToastContainer, Slide } from 'react-toastify';
 import ReactTooltip from 'react-tooltip'
+import Twarkto from '../Twarkto';
 
 const Layout = ({ children }) => {
     return(
@@ -17,6 +18,7 @@ const Layout = ({ children }) => {
                 <meta property="og:image" content="https://pixabay.com/get/54e4d747485bae14f1dc8460da29317e1038dfe4565975_640.jpg" />
             </Head>
             { children }
+            <Twarkto/>
             <ToastContainer transition={Slide} />
             <GoTop scrollStepInPx="100" delayInMs="10.50" />
         </React.Fragment>

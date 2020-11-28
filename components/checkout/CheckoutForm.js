@@ -1,14 +1,31 @@
 import React from "react";
+import axios from "axios";
 import Link from "next/link";
 import { connect } from "react-redux";
 import OrderSummary from "./OrderSummary";
 import Payment from "../payments/Payment";
 import useForm from "./userForm";
 import CoinbaseCommerceButton from "react-coinbase-commerce";
+// npm install --save-dev @iconify/react @iconify-icons/mdi
+import { Icon, InlineIcon } from "@iconify/react";
+import bitcoinIcon from "@iconify-icons/mdi/bitcoin";
 
 function CheckoutForm({ total, shipping }) {
-  function handleSubmit() {
-    console.log("Form submitted.");
+  function handleOnSubmit(e) {
+    e.preventDefault();
+
+    return axios
+      .get(
+        `https://coinbase-backend.herokuapp.com/checkout?total=${totalAmount}&name=${state.firstName.value}`
+      )
+      .then((res) => {
+        console.log(res.data);
+        redirect(res.data);
+      });
+  }
+
+  function redirect(url) {
+    if (url) return window.open(url, "_blank");
   }
 
   let totalAmount = (total + shipping).toFixed(2);
@@ -87,10 +104,9 @@ function CheckoutForm({ total, shipping }) {
     },
   };
 
-  const { state, handleOnChange, handleOnSubmit, disable } = useForm(
+  const { state, handleOnChange, disable } = useForm(
     stateSchema,
-    validationStateSchema,
-    handleSubmit
+    validationStateSchema
   );
 
   const errorStyle = {
@@ -145,13 +161,6 @@ function CheckoutForm({ total, shipping }) {
                       {state.lastName.error && (
                         <p style={errorStyle}>{state.lastName.error}</p>
                       )}
-                    </div>
-                  </div>
-
-                  <div className="col-lg-12 col-md-12">
-                    <div className="form-group">
-                      <label>Company Name</label>
-                      <input type="text" className="form-control" />
                     </div>
                   </div>
 
@@ -262,51 +271,6 @@ function CheckoutForm({ total, shipping }) {
                       )}
                     </div>
                   </div>
-
-                  <div className="col-lg-12 col-md-12">
-                    <div className="form-check">
-                      <input
-                        type="checkbox"
-                        className="form-check-input"
-                        id="create-an-account"
-                      />
-                      <label
-                        className="form-check-label"
-                        htmlFor="create-an-account"
-                      >
-                        Create an account?
-                      </label>
-                    </div>
-                  </div>
-
-                  <div className="col-lg-12 col-md-12">
-                    <div className="form-check">
-                      <input
-                        type="checkbox"
-                        className="form-check-input"
-                        id="ship-different-address"
-                      />
-                      <label
-                        className="form-check-label"
-                        htmlFor="ship-different-address"
-                      >
-                        Ship to a different address?
-                      </label>
-                    </div>
-                  </div>
-
-                  <div className="col-lg-12 col-md-12">
-                    <div className="form-group">
-                      <textarea
-                        name="notes"
-                        id="notes"
-                        cols="30"
-                        rows="6"
-                        placeholder="Order Notes"
-                        className="form-control"
-                      />
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -316,50 +280,26 @@ function CheckoutForm({ total, shipping }) {
                 <h3 className="title">Your Order</h3>
 
                 <OrderSummary />
-
-                <div className="payment-method">
-                  <p>
-                    <input
-                      type="radio"
-                      id="direct-bank-transfer"
-                      name="radio-group"
-                      defaultChecked={true}
-                    />
-                    <label htmlFor="direct-bank-transfer">
-                      Direct Bank Transfer
-                    </label>
-                    Make your payment directly into our bank account. Please use
-                    your Order ID as the payment reference. Your order will not
-                    be shipped until the funds have cleared in our account.
-                  </p>
-                  <p>
-                    <input type="radio" id="paypal" name="radio-group" />
-                    <label htmlFor="paypal">PayPal</label>
-                  </p>
-                  <p>
-                    <input
-                      type="radio"
-                      id="cash-on-delivery"
-                      name="radio-group"
-                    />
-                    <label htmlFor="cash-on-delivery">Cash on Delivery</label>
-                  </p>
+                <br />
+                <div style={{ color: "red" }}>
+                  Card Services Are Temporarily Disabled In Your Region, Please Use
+                  the Available Payment Method Below
                 </div>
-                <CoinbaseCommerceButton
-                  styled={true}
-                  color="red"
-                  checkoutId={"30934862-d980-46cb-9402-43c81b0cabd5"}
-                  name="strapsession"
-                  description="React Next eCommerce Templates"
-                  amount={totalAmount * 100}
-                  currency="USD"
-                  
-                >
-                 <button  >
-                            Place Order
-                        </button>   </CoinbaseCommerceButton>
-                <Payment amount={totalAmount * 100} disabled={disable} />
+                <div style={{ color: "green" }}>
+                  Payment button only works when all fields in the form marked
+                  with <span style={{ color: "red" }}>*</span> are filled 
+                </div>
               </div>
+              <br />
+
+              <button
+                style={{ color: "gold", borderRadius: "10%" }}
+                type="submit"
+                disabled={disable}
+                className={`btn btn-success`}
+              >
+                <Icon icon={bitcoinIcon} height="30" /> Pay
+              </button>
             </div>
           </div>
         </form>
