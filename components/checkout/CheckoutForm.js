@@ -3,12 +3,10 @@ import axios from "axios";
 import Link from "next/link";
 import { connect } from "react-redux";
 import OrderSummary from "./OrderSummary";
-import Payment from "../payments/Payment";
 import useForm from "./userForm";
-import CoinbaseCommerceButton from "react-coinbase-commerce";
-// npm install --save-dev @iconify/react @iconify-icons/mdi
-import { Icon, InlineIcon } from "@iconify/react";
-import bitcoinIcon from "@iconify-icons/mdi/bitcoin";
+// get our fontawesome imports
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBitcoin } from "@fortawesome/free-brands-svg-icons";
 
 function CheckoutForm({ total, shipping }) {
   function handleOnSubmit(e) {
@@ -291,6 +289,7 @@ function CheckoutForm({ total, shipping }) {
                 </div>
               </div>
               <br />
+              
 
               <button
                 style={{ color: "gold", borderRadius: "10%" }}
@@ -298,7 +297,7 @@ function CheckoutForm({ total, shipping }) {
                 disabled={disable}
                 className={`btn btn-success`}
               >
-                <Icon icon={bitcoinIcon} height="30" /> Pay
+                   <FontAwesomeIcon icon={faBitcoin} size="lg" spin/> Pay
               </button>
             </div>
           </div>
