@@ -95,80 +95,15 @@ class QuickView extends Component {
                                     </div>
 
                                     <ul className="product-info">
+                                       
                                         <li>
-                                            <span>Vendor:</span> <Link href="#"><a>Lereve</a></Link>
+                                            <span>Availability:</span> <Link href="#"><a>In stock </a></Link>
                                         </li>
-                                        <li>
-                                            <span>Availability:</span> <Link href="#"><a>In stock (7 items)</a></Link>
-                                        </li>
-                                        <li>
-                                            <span>Product Type:</span> <Link href="#"><a>T-Shirt</a></Link>
-                                        </li>
+                                     
                                     </ul>
 
-                                    <div className="product-color-switch">
-                                        <h4>Color:</h4>
 
-                                        <ul>
-                                            <li>
-                                                <Link href="#">
-                                                    <a title="Black" className="color-black"></a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a title="White" className="color-white"></a>
-                                                </Link>
-                                            </li>
-                                            <li className="active">
-                                                <Link href="#">
-                                                    <a title="Green" className="color-green"></a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a title="Yellow Green" className="color-yellowgreen"></a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a title="Teal" className="color-teal"></a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div className="product-size-wrapper">
-                                        <h4>Size:</h4>
-
-                                        <ul>
-                                            <li>
-                                                <Link href="#">
-                                                    <a>XS</a>
-                                                </Link>
-                                            </li>
-                                            <li className="active">
-                                                <Link href="#">
-                                                    <a>S</a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a>M</a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a>XL</a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a>XXL</a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    
 
                                     <div className="product-add-to-cart">
                                         <div className="input-counter">
@@ -202,9 +137,7 @@ class QuickView extends Component {
                                         </button>
                                     </div>
 
-                                    <Link href="#">
-                                        <a className="view-full-info">View full info</a>
-                                    </Link>
+                                    
                                 </div>
                             </div>
                         </div>

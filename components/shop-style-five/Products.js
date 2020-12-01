@@ -93,30 +93,17 @@ class Products extends Component {
                         <div className="row">
                             <div className="col-lg-12 col-md-12">
                                 <ul className="tabs">
-                                    <li
-                                        onClick={(e) => {e.preventDefault(); this.openTabSection(e, 'tab1')}}
-                                        className="current"
-                                    >
-                                        <span className="tabs-nav-text">
-                                            <span className="dot"></span> Latest Products
-                                        </span>
-                                    </li>
+                                   
                                     
                                     <li
                                         onClick={(e) => {e.preventDefault(); this.openTabSection(e, 'tab2')}}
                                     >
-                                        <span className="tabs-nav-text">
-                                            <span className="dot"></span> Special Products
+                                        <span className="tabs-nav-text" style={{color: "black"}}>
+                                        Top Selling Products
                                         </span>
                                     </li>
                                     
-                                    <li
-                                        onClick={(e) => {e.preventDefault(); this.openTabSection(e, 'tab3')}}
-                                    >
-                                        <span className="tabs-nav-text">
-                                            <span className="dot"></span> Featured Products
-                                        </span>
-                                    </li>
+                                    
                                 </ul>
                             </div>
 

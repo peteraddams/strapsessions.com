@@ -9,6 +9,7 @@ import 'react-image-lightbox/style.css';
 import '../public/assets/styles/style.css';
 import '../public/assets/styles/responsive.css';
 import 'react-coinbase-commerce/dist/coinbase-commerce-button.css';
+import '../public/assets/styles/404.css';
 
 import Layout from '../components/_App/Layout';
 import { Provider } from 'react-redux';

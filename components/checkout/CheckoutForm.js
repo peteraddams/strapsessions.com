@@ -1,5 +1,7 @@
 import React from "react";
 import axios from "axios";
+
+import Router from 'next/router'
 import Link from "next/link";
 import { connect } from "react-redux";
 import OrderSummary from "./OrderSummary";
@@ -8,10 +10,13 @@ import useForm from "./userForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBitcoin } from "@fortawesome/free-brands-svg-icons";
 
-function CheckoutForm({ total, shipping }) {
+import { toast } from 'react-toastify';
+import { resetCart } from "../../store/actions/actions";
+
+function CheckoutForm({ total, shipping, }) {
   function handleOnSubmit(e) {
     e.preventDefault();
-
+   
     return axios
       .get(
         `https://coinbase-backend.herokuapp.com/checkout?total=${totalAmount}&name=${state.firstName.value}`
@@ -19,11 +24,24 @@ function CheckoutForm({ total, shipping }) {
       .then((res) => {
         console.log(res.data);
         redirect(res.data);
+      resetCart;
+        toast.success('Order has been received, Please make payment in the new window', {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true
+        });
+        setTimeout(function(){ Router.push('/thankyou'); }, 5000);
       });
   }
 
   function redirect(url) {
-    if (url) return window.open(url, "_blank");
+    if (url) return window.open(url, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=700");
+    
+   
+ 
   }
 
   let totalAmount = (total + shipping).toFixed(2);

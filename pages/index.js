@@ -2,19 +2,20 @@ import React from "react";
 import { useSelector } from "react-redux";
 import NavbarTwo from "../components/Layout/NavbarTwo";
 import BannerSlider from "../components/shop-style-five/BannerSlider";
-import Facility from "../components/shop-style-five/Facility";
+
 import CategoryTypes from "../components/shop-style-five/CategoryTypes";
 import ProductsOffer from "../components/shop-style-five/ProductsOffer";
 import Partner from "../components/Common/Partner";
 import Subscribe from "../components/Common/Subscribe";
 import Footer from "../components/Layout/Footer";
-import AddsModal from "../components/Modal/AddsModal";
 import Products from "../components/shop-style-five/Products";
 import { getAllPosts } from "../lib/index";
 import dynamic from "next/dynamic";
-import Link from "next/link";
 import News from "../components/Common/News";
 import TestimonialsTwo from "../components/Common/TestimonialsTwo";
+import SpecialOffer from "../components/shop-style-nine/SpecialOffer";
+
+import Facility from "../components/Common/Facility";
 export async function getStaticProps() {
   const posts = await getAllPosts();
   return { revalidate: 1, props: { posts } };
@@ -47,23 +48,25 @@ const options = {
 
 const Index = ({ posts }) => {
   const products = useSelector((state) => state.products);
+  const topSellers = useSelector((state) => state.topSellers);
   const addedItemsToCompare = useSelector((state) => state.addedItemsToCompare);
   return (
     <React.Fragment>
       <NavbarTwo />
       <BannerSlider />
-      <Facility />
+
       <CategoryTypes />
-      
-      <Products products={products} CompareProducts={addedItemsToCompare} />
+
+      <Products products={topSellers} CompareProducts={addedItemsToCompare} />
+      <Facility />
+      <SpecialOffer products={products} CompareProducts={addedItemsToCompare} />
       <ProductsOffer />
-      <News posts={posts}/>
-      <TestimonialsTwo/>
-      <Partner/>
+      <News posts={posts} />
+      <TestimonialsTwo />
+      <Partner />
       <Subscribe />
 
       <Footer />
-     
     </React.Fragment>
   );
 };

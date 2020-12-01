@@ -25,6 +25,12 @@ const Product = () => {
     || useSelector((state) => state.aks.find(item => item.id === parseInt(id)))
     || useSelector((state) => state.boltAction.find(item => item.id === parseInt(id)))
     || useSelector((state) => state.hunting.find(item => item.id === parseInt(id)))
+    || useSelector((state) => state.rftactical.find(item => item.id === parseInt(id)))
+    || useSelector((state) => state.selfdefense.find(item => item.id === parseInt(id)))
+    || useSelector((state) => state.rim.find(item => item.id === parseInt(id)))
+    || useSelector((state) => state.handAmmuni.find(item => item.id === parseInt(id)))
+    || useSelector((state) => state.rifleammuni.find(item => item.id === parseInt(id)))
+    
 
     const products = useSelector((state) => state.products)
     const addedItemsToCompare = useSelector((state) => state.addedItemsToCompare)

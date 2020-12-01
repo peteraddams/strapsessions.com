@@ -14,7 +14,7 @@ const ThankYou = () => {
 
             <div className="thank-you-area">
                 <div className="container">
-                    <h1>Thank You</h1>
+                    <h1>Thank You: Please Make Sure You Complete the Payment, and an Invoice will be sent to you</h1>
                     <Link href="/">
                         <a className="btn btn-primary">Go Home</a>
                     </Link>

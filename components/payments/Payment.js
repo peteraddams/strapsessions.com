@@ -41,7 +41,7 @@ class Payments extends React.Component {
                         token={onToken}
                         stripeKey="pk_test_ZaZZWZGlvdIn12yFleIqyjSI00G4e18Kf7"
                         billingAddress={false}
-                        
+                        closed={this.handleClick}
                     >
                         <button disabled={this.props.disabled} className={`btn btn-primary ${this.props.disabled ? 'btn-disabled' : ''}`} >
                             Place Order

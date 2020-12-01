@@ -14,7 +14,7 @@ class CategoryTypes extends Component {
                   alt="image"
                 />
 
-                <h3 style={{color: "red"}}>Firearms</h3>
+                <h3 style={{color: "white"}}>Firearms</h3>
 
                 <Link href="/shop">
                   <a className="shop-now-btn">Shop Now</a>
@@ -47,11 +47,11 @@ class CategoryTypes extends Component {
             <div className="col-lg-3 col-sm-6 col-md-6">
               <div className="single-category-boxes">
                 <img
-                  src={require("../../images/new/case1.png")}
+                  src={require("../../images/guns/close-rifle-scope-hunting-on-wooden-gun-optics.jpg")}
                   alt="image"
                 />
 
-                <h3 style={{color: "red"}}>Optics: Scoops And Sights</h3>
+                <h3 style={{color: "white"}}>Optics: Scoops And Sights</h3>
 
                 <Link href="/shop">
                   <a className="shop-now-btn">Shop Now</a>
